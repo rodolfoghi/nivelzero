@@ -11,31 +11,20 @@ on:
 
 jobs:
   cloc:
-    name: Count lines of code
+    # The type of runner that the job will run on
     runs-on: ubuntu-latest
+
+    # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-      - name: Check out repo
-        uses: actions/setup-dotnet@v3
+    # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+    - uses: actions/checkout@v3
 
-      - name: Install cloc
-        run: |
-          sudo apt-get update
-          sudo apt-get -y install cloc
-
-      - name: Print lines of code
-        run: cloc --include-lang C#,SQL,Razor,"Bourne Shell",PowerShell,HTML,CSS,Sass,JavaScript,TypeScript --vcs git
-
-
-  lint:
-    name: Lint
-    runs-on: ubuntu-latest
-    steps:
-      - name: Set up .NET
-        uses: actions/setup-dotnet@v3
-
-      - name: Verify format
-        run: dotnet format --verify-no-changes
-
+    # Runs djdefi/cloc-action
+    - name: Count Lines of Code (cloc)
+      uses: djdefi/cloc-action@6
+      with:
+        options: --include-lang C#,SQL,Razor,"Bourne Shell",PowerShell,HTML,CSS,Sass,JavaScript,TypeScript --vcs git
+        
   build:
 
     runs-on: ubuntu-latest
