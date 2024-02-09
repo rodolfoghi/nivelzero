@@ -14,8 +14,8 @@ public class TenantTest : BaseTest
         var tenantMail = Faker.Internet.Email();
         var companyName = Faker.Company.CompanyName();
         var phone = Faker.Person.Phone;
-        var companySize = CompanySize.Small;
-        var primaryInterest = E.PrimaryInterest.UseItInMyCompany;
+        var companySize = Faker.PickRandom<CompanySize>();
+        var primaryInterest = Faker.PickRandom<E.PrimaryInterest>();
 
         // Act
         E.Tenant tenant = new(tenantName, tenantMail, companyName, phone, companySize, primaryInterest);
