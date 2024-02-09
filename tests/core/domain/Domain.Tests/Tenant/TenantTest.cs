@@ -1,17 +1,19 @@
 ﻿using Domain.Company;
+using Domain.Tests.Common;
 using E = Domain.Tenant;
 
 namespace Domain.Tests.Tenant;
-public class TenantTest
+
+public class TenantTest : BaseTest
 {
     [Fact]
     public void ShouldCreateTenant()
     {
         // Arrange
-        var tenantName = "TenantName";
-        var tenantMail = "tenant@mail.com";
-        var companyName = "My Company";
-        var phone = "54999717396";
+        var tenantName = Faker.Person.FullName;
+        var tenantMail = Faker.Internet.Email();
+        var companyName = Faker.Company.CompanyName();
+        var phone = Faker.Person.Phone;
         var companySize = CompanySize.Small;
         var primaryInterest = E.PrimaryInterest.UseItInMyCompany;
 
