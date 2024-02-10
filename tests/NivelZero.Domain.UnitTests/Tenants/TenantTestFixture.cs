@@ -6,18 +6,44 @@ namespace NivelZero.Domain.UnitTests.Tenants;
 
 public class TenantTestFixture : BaseFixture
 {
-   public Domain.Tenants.Tenant GenerateValidTenant() => new(
-        RandomValidName(),
-        RandomValidMail(),
-        RandomValidCompanyName(),
-        RandomValidPhone(),
-        RandomValidCompanySize(),
-        RandomValidPrimaryInterest());
-   
-    public string RandomValidName() => Faker.Person.FullName;
-    public string RandomValidMail() => Faker.Internet.Email();
-    public string RandomValidCompanyName() => Faker.Company.CompanyName();
-    public string RandomValidPhone() => Faker.Person.Phone;
-    public CompanySize RandomValidCompanySize() => Faker.PickRandom<CompanySize>();
-    public PrimaryInterest RandomValidPrimaryInterest() => Faker.PickRandom<PrimaryInterest>();
+    public Tenant GenerateValidTenant()
+    {
+        return new Tenant(
+            RandomValidName(),
+            RandomValidMail(),
+            RandomValidCompanyName(),
+            RandomValidPhone(),
+            RandomValidCompanySize(),
+            RandomValidPrimaryInterest());
+    }
+
+    public string RandomValidName()
+    {
+        return Faker.Person.FullName;
+    }
+
+    public string RandomValidMail()
+    {
+        return Faker.Internet.Email();
+    }
+
+    public string RandomValidCompanyName()
+    {
+        return Faker.Company.CompanyName();
+    }
+
+    public string RandomValidPhone()
+    {
+        return Faker.Person.Phone;
+    }
+
+    public CompanySize RandomValidCompanySize()
+    {
+        return Faker.PickRandom<CompanySize>();
+    }
+
+    public PrimaryInterest RandomValidPrimaryInterest()
+    {
+        return Faker.PickRandom<PrimaryInterest>();
+    }
 }

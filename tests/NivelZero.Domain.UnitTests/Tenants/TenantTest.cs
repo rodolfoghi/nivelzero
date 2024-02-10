@@ -6,7 +6,7 @@ namespace NivelZero.Domain.UnitTests.Tenants;
 public class TenantTest
 {
     private readonly TenantTestFixture _fixture = new();
-    
+
     [Fact]
     public void ShouldCreateTenant()
     {
