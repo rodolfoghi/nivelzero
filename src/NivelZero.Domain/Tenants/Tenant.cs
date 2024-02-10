@@ -1,18 +1,25 @@
-﻿using Domain.Company;
+﻿using NivelZero.Domain.Common;
+using NivelZero.Domain.Companies;
 
-namespace Domain.Tenant;
+namespace NivelZero.Domain.Tenants;
+
 public class Tenant(
     string name,
     string mail,
     string companyName,
     string phone,
     CompanySize companySize,
-    PrimaryInterest primaryInterest)
+    PrimaryInterest primaryInterest) : BaseEntity
 {
     public string Name { get; } = name;
+
     public string Mail { get; } = mail;
+
     public string CompanyName { get; } = companyName;
+
     public string Phone { get; } = phone;
+
     public CompanySize CompanySize { get; } = companySize;
+
     public PrimaryInterest PrimaryInterest { get; } = primaryInterest;
 }
