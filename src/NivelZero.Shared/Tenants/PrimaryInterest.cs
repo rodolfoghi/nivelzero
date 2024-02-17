@@ -1,4 +1,4 @@
-﻿namespace NivelZero.Domain.Tenants;
+﻿namespace NivelZero.Shared.Tenants;
 
 public enum PrimaryInterest
 {

@@ -19,6 +19,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NivelZero.Contracts", "src\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NivelZero.Infrastructure", "src\NivelZero.Infrastructure\NivelZero.Infrastructure.csproj", "{A7822F63-B1BE-4DDB-9AD5-9C2C13519F2D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NivelZero.Shared", "src\NivelZero.Shared\NivelZero.Shared.csproj", "{60BF83A4-9963-4611-B68E-A77EE1EED1FA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -49,6 +51,10 @@ Global
 		{A7822F63-B1BE-4DDB-9AD5-9C2C13519F2D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A7822F63-B1BE-4DDB-9AD5-9C2C13519F2D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A7822F63-B1BE-4DDB-9AD5-9C2C13519F2D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{60BF83A4-9963-4611-B68E-A77EE1EED1FA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{60BF83A4-9963-4611-B68E-A77EE1EED1FA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{60BF83A4-9963-4611-B68E-A77EE1EED1FA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{60BF83A4-9963-4611-B68E-A77EE1EED1FA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -60,6 +66,7 @@ Global
 		{A01D3E6E-0A9A-47F9-8AAE-67944C2FF2DE} = {6ACDFADA-8CB0-492A-99EC-B4999D99AA63}
 		{6FD8AAD2-D341-4652-9A1A-A0E4E644DA8B} = {6ACDFADA-8CB0-492A-99EC-B4999D99AA63}
 		{A7822F63-B1BE-4DDB-9AD5-9C2C13519F2D} = {6ACDFADA-8CB0-492A-99EC-B4999D99AA63}
+		{60BF83A4-9963-4611-B68E-A77EE1EED1FA} = {6ACDFADA-8CB0-492A-99EC-B4999D99AA63}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {09A8D178-F844-4ACE-B8B2-3DF3A16DC315}

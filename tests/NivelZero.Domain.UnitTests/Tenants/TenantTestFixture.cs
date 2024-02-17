@@ -1,6 +1,7 @@
-﻿using NivelZero.Domain.Companies;
-using NivelZero.Domain.Tenants;
+﻿using NivelZero.Domain.Tenants;
 using NivelZero.Domain.UnitTests.Common;
+using NivelZero.Shared.Companies;
+using NivelZero.Shared.Tenants;
 
 namespace NivelZero.Domain.UnitTests.Tenants;
 

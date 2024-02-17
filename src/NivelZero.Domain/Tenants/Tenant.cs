@@ -1,5 +1,6 @@
 ﻿using NivelZero.Domain.Common;
-using NivelZero.Domain.Companies;
+using NivelZero.Shared.Companies;
+using NivelZero.Shared.Tenants;
 
 namespace NivelZero.Domain.Tenants;
 

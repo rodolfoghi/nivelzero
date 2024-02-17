@@ -1,4 +1,4 @@
-﻿namespace NivelZero.Domain.Companies;
+﻿namespace NivelZero.Shared.Companies;
 
 public enum CompanySize
 {
