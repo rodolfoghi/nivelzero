@@ -16,4 +16,8 @@
         <ProjectReference Include="..\NivelZero.Contracts\NivelZero.Contracts.csproj"/>
     </ItemGroup>
 
+    <ItemGroup>
+        <InternalsVisibleTo Include="NivelZero.Api.IntegrationTests"/>
+    </ItemGroup>
+
 </Project>

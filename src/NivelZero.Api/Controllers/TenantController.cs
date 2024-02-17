@@ -4,6 +4,7 @@ using NivelZero.Contracts.Tenants;
 
 namespace NivelZero.API.Controllers;
 
+[Route("api/tenants")]
 public class TenantController(ITenantAppService tenantAppService) : ApiController
 {
     [HttpPost]
